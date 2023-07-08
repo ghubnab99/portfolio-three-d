@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logo_new from "/logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,7 +20,16 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import firebase from "./tech/firebase.png";
+import flutter from "./tech/flutter.png";
+import laravel from "./tech/laravel.png";
 import threejs from "./tech/threejs.svg";
+
+import aliexpress from "./appimages/aliexpress.png";
+import carrental from "./appimages/carrental.png";
+import foodordering from "./appimages/foodordering.png";
+import hopetalent from "./appimages/hopetalent.png";
+import reactdashboard from "./appimages/reactdashboard.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -32,6 +42,7 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  logo_new,
   backend,
   creator,
   mobile,
@@ -59,4 +70,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  firebase,
+  flutter,
+  laravel,
+  aliexpress,
+  carrental,
+  foodordering,
+  hopetalent,
+  reactdashboard,
 };

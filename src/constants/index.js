@@ -22,7 +22,14 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    firebase,
+    flutter,
+    laravel,
+    aliexpress,
+    carrental,
+    foodordering,
+    hopetalent,
+    reactdashboard,
   } from "../assets";
   
   export const navLinks = [
@@ -46,19 +53,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Mobile Developer",
+      icon: mobile,
+    },    
+    {
+      title: "APIs Developer",
       icon: creator,
     },
   ];
@@ -101,20 +108,20 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Firebase",
+      icon: firebase,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Flutter",
+      icon: flutter,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "Laravel",
+      icon: laravel,
     },
   ];
   
@@ -201,38 +208,86 @@ import {
   ];
   
   const projects = [
+    // {
+    //   name: "Car Rent",
+    //   description:
+    //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "mongodb",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "tailwind",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: carrent,
+    //   source_code_link: "https://github.com/",
+    // },
+    // {
+    //   name: "Job IT",
+    //   description:
+    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "restapi",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "scss",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: jobit,
+    //   source_code_link: "https://github.com/",
+    // },
+
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
+
+    //=========================================================================
+    //=========================================================================
+    //=========================================================================
+
     {
-      name: "Car Rent",
+      name: "Admin Dashboard",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A simple web-based admin dashboard that showcases the ability to login, add users, information displayed in a beautiful satistical way & it also has dark mode feature.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -240,30 +295,111 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: reactdashboard,
+      source_code_link: "https://react-firebase-auth-crud.vercel.app/",
     },
+
     {
-      name: "Trip Guide",
+      name: "Food Ordering Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A mini version an online food ordering website, with  the ability to register, login, and upload products. It also has the ability to add items to cart and checkout.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "framer-motion",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: foodordering,
+      source_code_link: "https://capable-marshmallow-05b936.netlify.app/",
+    },
+
+
+    {
+      name: "Aliexpress Clone",
+      description:
+        "A clone of the largest ecommerce online shoppint platform AliExpress, with products, checkout, placing order, register, login and view orders.",
+      tags: [
+        {
+          name: "vuejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nuxtjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: aliexpress,
+      source_code_link: "https://sprightly-ganache-192950.netlify.app/",
+    },
+
+
+    {
+      name: "Car Rental Website",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "headless-ui",
           color: "green-text-gradient",
         },
         {
+          name: "rapid-api",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: carrental,
+      source_code_link: "https://car-rental-showcase-smoky.vercel.app/",
+    },
+
+
+    {
+      name: "Hope Talents Website",
+      description:
+        "A beautifully designed website for a talent management firm to showcase available jobs from various companies & also a way for candidates to register, apply & track jobs.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: hopetalent,
+      source_code_link: "https://ghubnab99.github.io/hopeTalentsWebsite/",
     },
+
+
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };
